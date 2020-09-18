@@ -25,10 +25,22 @@ class _LoginPageState extends State<LoginPage> {
               )
           ),
             child: Center(
-            child: Padding(
-            padding: EdgeInsets.all(10),
-              child: Text("Login")
-            )
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width *.7 ,
+                    height: MediaQuery.of(context).size.height *.5  ,
+                    color: Colors.white.withOpacity(.5),
+                    child: Column(
+                        children: <Widget>[
+                          Text("Login", style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30
+                          ))
+                        ]
+                    )
+                  )
+                )
           )
 
         ),
