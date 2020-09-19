@@ -31,10 +31,14 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.all(10),
                   //esse codigo cria um retangulo no meio da tela
                   child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.white.withOpacity(.5),
 
+                    ),
                     width: MediaQuery.of(context).size.width *.7 ,
                     height: MediaQuery.of(context).size.height *.5  ,
-                    color: Colors.white.withOpacity(.5),
+
                     child: Column(
                         children: <Widget>[
                           Text("Login", style: TextStyle(
