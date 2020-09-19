@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/CustomTextField.dart';
 //codigo responsavel pelo exibição da tela de login
 class LoginPage extends StatefulWidget {
 
@@ -18,6 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             width: MediaQuery.of(context).size.width ,
             height: MediaQuery.of(context).size.height  ,
           decoration: BoxDecoration(
+            //gradiente
               gradient: LinearGradient(
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
@@ -27,16 +29,20 @@ class _LoginPageState extends State<LoginPage> {
             child: Center(
               child: Padding(
                 padding: EdgeInsets.all(10),
+                  //esse codigo cria um retangulo no meio da tela
                   child: Container(
+
                     width: MediaQuery.of(context).size.width *.7 ,
                     height: MediaQuery.of(context).size.height *.5  ,
                     color: Colors.white.withOpacity(.5),
                     child: Column(
                         children: <Widget>[
                           Text("Login", style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30
-                          ))
+                              color: Colors.white,
+                              fontSize: 30
+                            )),
+                          CustomTextField(placeholder: 'Email'),
+                          CustomTextField(placeholder: 'Senha',password: true)
                         ]
                     )
                   )
