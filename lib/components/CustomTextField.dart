@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   final String placeholder;
   bool password;
-  CustomTextField({Key key,this.placeholder, this.password=false});
+  CustomTextField({Key key,this.placeholder, this.password=false}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Center(

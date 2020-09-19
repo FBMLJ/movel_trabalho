@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+
+// importando o custom field
 import '../components/CustomTextField.dart';
+
+import '../components/CustomButton.dart';
+
 //codigo responsavel pelo exibição da tela de login
 class LoginPage extends StatefulWidget {
 
@@ -46,7 +51,8 @@ class _LoginPageState extends State<LoginPage> {
                               fontSize: 30
                             )),
                           CustomTextField(placeholder: 'Email'),
-                          CustomTextField(placeholder: 'Senha',password: true)
+                          CustomTextField(placeholder: 'Senha',password: true),
+                          CustomButton(buttonText: "Enviar",)
                         ]
                     )
                   )
