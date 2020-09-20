@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 // importando o custom field
 import '../components/CustomTextField.dart';
-
+import 'Cadastro.dart';
+//
 import '../components/CustomButton.dart';
 
 //codigo responsavel pelo exibição da tela de login
@@ -52,8 +53,9 @@ class _LoginPageState extends State<LoginPage> {
                             )),
                           CustomTextField(placeholder: 'Email'),
                           CustomTextField(placeholder: 'Senha',password: true),
-                          CustomButton(buttonText: "Enviar"),
-                          CustomButton(buttonText: "Cadastre-se")
+                          CustomButton(buttonText: "Enviar", onPress: ()=>{},),
+                          CustomButton(buttonText: "Cadastre-se", onPress: ()=>{Navigator.pushNamed(context,'/cadastro')
+                          }),
                         ]
                     )
                   )

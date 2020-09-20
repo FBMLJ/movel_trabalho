@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screen/Cadastro.dart';
+import 'package:flutter_app/screen/Login.dart';
 import 'Roteamento.dart';
 void main() {
   runApp(MyApp());
@@ -17,7 +19,12 @@ class MyApp extends StatelessWidget {
       // home: LoginPage(title: "Login"),
 
       // roteamento do flutter
-        onGenerateRoute: RouteGenerator.generateRoute
+      //   onGenerateRoute: RouteGenerator.generateRoute
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/cadastro': (context) => CadastroPage()
+      },
 
     );
   }
