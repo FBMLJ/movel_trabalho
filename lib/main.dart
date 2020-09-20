@@ -16,10 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: LoginPage(title: "Login"),
-
-      // roteamento do flutter
-      //   onGenerateRoute: RouteGenerator.generateRoute
+      //parte do codigo relacionada ao roteamento do aplicativo
       initialRoute: '/',
       routes: {
         '/': (context) => LoginPage(),

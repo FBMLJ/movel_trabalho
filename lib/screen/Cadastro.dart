@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import '../components/CustomButton.dart';
 import '../components/CustomTextField.dart';
+
+//codigo responsavel pelo exibição da tela de cadastro
 class CadastroPage extends StatefulWidget {
   @override
   _CadastroPageState createState() => _CadastroPageState();
 }
 
 class _CadastroPageState extends State<CadastroPage> {
+
+  //atributos
+  TextEditingController _controllerEmail = TextEditingController(text: "");
+  TextEditingController _controllerPassword = TextEditingController(text: "");
+  TextEditingController _controllerName = TextEditingController(text: "");
+  //metodos
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,9 +50,9 @@ class _CadastroPageState extends State<CadastroPage> {
                                 fontSize: 30
                             )),
 
-                            CustomTextField(lable: 'Nome', keyboard: TextInputType.name,),
-                            CustomTextField(lable: 'Email', keyboard: TextInputType.emailAddress,),
-                            CustomTextField(lable: 'Senha',password: true),
+                            CustomTextField(lable: 'Nome', keyboard: TextInputType.name,controller: this._controllerName,),
+                            CustomTextField(lable: 'Email', keyboard: TextInputType.emailAddress,controller: this._controllerEmail),
+                            CustomTextField(lable: 'Senha',password: true, controller: this._controllerPassword,),
                             CustomButton(buttonText: "Enviar", onPress: ()=>{},),
                             CustomButton(buttonText: "Volta", onPress: ()=>{Navigator.pop(context)
                             }),

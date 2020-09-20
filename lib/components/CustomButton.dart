@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
+
+/*
+* Esse componente para colocar os botões do aplicativo para isso precisa preencher os seguintes atributos
+* buttonText: o texto do botão(String)
+* buttonColor: a cor do botão(Colors)
+* textColor: a cor do texto(Colors)
+* onPress: a função que será executada quando o botão for clicado
+*/
+
 class CustomButton extends StatelessWidget {
+
+  //atributos
   final String buttonText;
   final Color buttonColor;
   final Color textColor;
