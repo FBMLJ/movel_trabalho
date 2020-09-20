@@ -51,8 +51,8 @@ class _LoginPageState extends State<LoginPage> {
                               color: Colors.white,
                               fontSize: 30
                             )),
-                          CustomTextField(placeholder: 'Email'),
-                          CustomTextField(placeholder: 'Senha',password: true),
+                          CustomTextField(lable: 'Email'),
+                          CustomTextField(lable: 'Senha',password: true),
                           CustomButton(buttonText: "Enviar", onPress: ()=>{},),
                           CustomButton(buttonText: "Cadastre-se", onPress: ()=>{Navigator.pushNamed(context,'/cadastro')
                           }),

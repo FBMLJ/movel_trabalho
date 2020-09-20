@@ -1,9 +1,9 @@
 // componentes de TextInput feito para otimizar o codigo e concentra toda logica nesse arquivo
 import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
-  final String placeholder;
-  bool password;
-  CustomTextField({Key key,this.placeholder, this.password=false}) : super(key: key);
+  final String lable;
+  final bool password;
+  CustomTextField({Key key,this.lable, this.password=false}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -12,7 +12,7 @@ class CustomTextField extends StatelessWidget {
         child: TextField(
           obscureText: this.password,
           decoration: InputDecoration(
-            hintText: this.placeholder,
+            labelText: this.lable,
               contentPadding:  EdgeInsets.only(left: 20.0)
           ),
         ),
