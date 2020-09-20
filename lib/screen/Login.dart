@@ -52,7 +52,8 @@ class _LoginPageState extends State<LoginPage> {
                             )),
                           CustomTextField(placeholder: 'Email'),
                           CustomTextField(placeholder: 'Senha',password: true),
-                          CustomButton(buttonText: "Enviar",)
+                          CustomButton(buttonText: "Enviar"),
+                          CustomButton(buttonText: "Cadastre-se")
                         ]
                     )
                   )

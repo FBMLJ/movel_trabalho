@@ -3,13 +3,14 @@ class CustomButton extends StatelessWidget {
   final String buttonText;
   final Color buttonColor;
   final Color textColor;
+  final onPress;
 
-  const CustomButton({Key key, this.buttonText, this.buttonColor=Colors.lightGreen, this.textColor=Colors.white}) : super(key: key);
+  const CustomButton({Key key, this.buttonText, this.buttonColor=Colors.lightGreen, this.textColor=Colors.white, this.onPress}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
         child: RaisedButton(
-          onPressed: () {},
+          // onPressed: this.onPress,
           color: this.buttonColor,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
