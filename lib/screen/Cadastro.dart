@@ -42,8 +42,8 @@ class _CadastroPageState extends State<CadastroPage> {
                                 fontSize: 30
                             )),
 
-                            CustomTextField(lable: 'Nome',password: true),
-                            CustomTextField(lable: 'Email'),
+                            CustomTextField(lable: 'Nome', keyboard: TextInputType.name,),
+                            CustomTextField(lable: 'Email', keyboard: TextInputType.emailAddress,),
                             CustomTextField(lable: 'Senha',password: true),
                             CustomButton(buttonText: "Enviar", onPress: ()=>{},),
                             CustomButton(buttonText: "Volta", onPress: ()=>{Navigator.pop(context)
